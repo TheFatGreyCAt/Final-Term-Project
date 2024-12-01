@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ tuyển sinh</title>
+    <link rel="stylesheet" href="CSS/Hosotuyensinh.css">
+    <style>
+        .hidden{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="Logo">
+        <img id="anh_logo" src="Storage/Logo.png" onclick="Index()">
+        <p id="hoso1">Hồ sơ tuyển sinh</p>
+        <div id="hoso2"><span>Xin chào</span><br><button type="button" id="dangxuat" onclick="dangxuat()">Đăng xuất</button></div>
+    </div>
+    <div id="hososinhvien">
+        <form action="">
+            <div class="de_muc">1. Thông tin cá nhân</div>
+            <div class="thong_tin">
+                <div>
+                    <label>Họ và tên</label><br>
+                    <input type="text" placeholder="Vui lòng nhập họ tên" required>
+                </div>
+                <div>
+                    <label>Ngày sinh</label><br>
+                    <input type="date" required>
+                </div>
+                <div>
+                    <label>Giới tính</label><br>
+                    <select required>
+                        <option value="" disabled selected>Chọn giới tính</option>
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                        <option value="Giới tính khác">Giới tính khác</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Số CMND / CCCD</label><br>
+                    <input type="text" placeholder="Vui lòng nhập CCCD hoặc CMND của bạn" required>
+                </div>
+                <div class="can_giua">
+                    <label>Dân tộc</label><br>
+                    <input type="text" placeholder="Vui lòng nhập dân tộc" required>
+                </div>
+            </div>
+            <div class="de_muc">2. Thông tin liên lạc</div>
+            <div class="thong_tin">
+                <div id="diachi">
+                    <label>Địa chỉ thường trú</label><br>
+                    <input type="text" placeholder="Vui lòng nhập địa chỉ thường trú" required>
+                </div>
+                <div>
+                    <label>Số điện thoại</label><br>
+                    <input type="number" placeholder="Vui lòng nhập số điện thoại" required>
+                </div>
+                <div>
+                    <label>Email cá nhân</label><br>
+                    <input type="email" placeholder="Vui lòng nhập Email">
+                </div>
+            </div>
+            <div class="de_muc">3. Thông tin học vấn</div>
+            <div class="thong_tin">
+                <div>
+                    <label>Trường THPT đã tốt nghiệp</label><br>
+                    <input type="text" placeholder="Vui lòng nhập nơi trường bạn đã tốt nghiệp" required>
+                </div>
+                <div>
+                    <label>Điểm trung bình cả 3 năm học THPT</label><br>
+                    <input type="number" placeholder="Vui lòng nhập điểm của bạn" step="0.01" required>
+                </div>
+            </div>
+            <div class="de_muc">4. Thông tin ngành học và gia đình</div>
+            <div class="thong_tin">
+                <div>
+                    <label>Ngành học</label><br>
+                    <input type="text" placeholder="Vui lòng nhập tên hoặc mã ngành học" required>
+                </div>
+                <div>
+                    <label>Họ tên cha/mẹ/người giám hộ</label><br>
+                    <input type="text" placeholder="Vui lòng nhập tên cha/mẹ/người giám hộ" required>
+                </div>
+                <div>
+                    <label>Nghề nghiệp cha/mẹ/người giám hộ</label><br>
+                    <input type="tên" placeholder="Vui lòng nhập nghề nghiệp của cha/mẹ/người giám hộ" required>
+                </div>
+                <div>
+                    <label>Số điện thoại của cha/mẹ/người giám hộ</label><br>
+                    <input type="number" placeholder="Vui lòng nhập số điện thoại của cha/mẹ/người giám hộ" required>
+                </div>
+            </div>
+            <div id="Nut_gui_ho_so">
+                <button type="submit" id="gui_du_lieu" class="gui_du_lieu" onclick="gui_thong_tin()">Gửi thông tin</button>
+                <button type="submit" id="gui_lai_du_lieu" class="gui_du_lieu" style="display: none;" onclick="gui_lai_thong_tin()">Gửi lại thông tin</button>
+            </div>
+        </form>
+    </div>
+    <div id="Admin" class="hidden">
+        <div id="Ten_danh_sach">Danh sách thông tin hồ sơ sinh viên</div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>STT</td>
+                    <td>Họ tên</td>
+                    <td>Giới tính</td>
+                    <td>Dân tộc</td>
+                    <td>CCCD/CMND</td>
+                    <td>Thời gian nộp</td>
+                    <td>Trạng thái</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="Nut_gui_ho_so_Admin">
+            <button type="button" class="gui_du_lieu_Admin" onclick="Chi_tiet()">Chi tiết</button>
+            <button type="button" class="gui_du_lieu_Admin" onclick="Duyet()">Duyệt</button>
+            <button type="button" class="gui_du_lieu_Admin" onclick="Duyet_lai()">Yêu cầu nhập lại</button>
+            <button type="button" class="gui_du_lieu_Admin" onclick="Khong_duyet()">Không duyệt</button>
+        </div>
+
+        <div id="chan_thao_tac" class="chan_thao_tac"></div>
+        <div id="ALERT" class="ALERT">
+            <div id="Noi_dung_alert"></div><br>
+            <button onclick="Dong_Alert()">OK</button>
+        </div>
+    </div>
+    <script src="JS/Hosotuyensinh.js"></script>
+</body>
+</html>

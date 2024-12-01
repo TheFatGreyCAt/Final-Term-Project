@@ -1,0 +1,918 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển sinh</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="icon" href="Storage/tab-logo.png" type="image/png">
+</head>
+<body>
+    
+    <header>
+        <div class="flex">
+
+            <div class="nav-bar"> 
+
+                <a href="Index.html" >
+                    <img src="Storage/hnue-logo.jpg" alt="" class="logo-pic">
+                </a>
+
+                <div class="logo-name">
+                    <div class="logo-name-up">
+                        TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI
+                    </div>
+                    <div class="logo-name-dw">
+                        Hanoi National University of Education
+                    </div>
+                </div>
+
+            </div>
+            <nav class="nav-bar-adjust">
+                <a href="Index.html" class="home-btn">
+                    <span>Trang chủ</span>
+                </a>
+                <a href="news.html" class="news-btn">
+                    <span>Tin tức</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <a href="admission.html" class="admission-btn">
+                    <span>Tuyển sinh</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+            </nav>
+            <div id="search-box">
+                <input type="text" placeholder="Tìm kiếm">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div id="user-btn">
+                <img src="Storage/Unknown_person.jpg" class="image " alt="">
+                <img src="Storage/admin.png" class="image active" alt="">
+                <img src="Storage/user.png" class="image " alt="">
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="Storage/Unknown_person.jpg" class="image" alt="">
+            <h3 class="name">Unknown</h3>
+            <p class="role">Unknown</p>
+            <div class="flex-btn">
+                <a href="Dangky-Dangnhap.html" class="option-btn">Đăng nhập</a>
+                <a href="Dangky-Dangnhap.html" class="option-btn" onclick="check()">Đăng kí</a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="Storage/admin.png" class="image" alt="">
+            <h3 class="name">Unknown</h3>
+            <p class="role">Unknown</p>
+            <div class="flex-btn hidden">
+                <a href="Hosotuyensinh.html" class="option-btn">Quản lí hồ sơ</a>
+                <a href="NewsForm.html" class="option-btn">Đăng tin tuyển sinh</a>
+                <a href="Dangky-Dangnhap.html" class="option-btn" onclick="dangxuat()">Đăng xuất</a>
+            </div>
+        </div>
+        
+        <div class="profile">
+            <img src="Storage/user.png" class="image" alt="">
+            <h3 class="name">Unknown</h3>
+            <p class="role">Unknown</p>
+            <div class="flex-btn">
+                <a href="Hosotuyensinh.html" class="option-btn">Hồ sơ tuyển sinh</a>
+                <a href="Dangky-Dangnhap.html" class="option-btn" onclick="dangxuat()">Đăng xuất</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="content-admission">
+        <div class="admission-page">
+            <div id="KHTN">
+                <div class="admission-page-bar">
+                <div class="ad-bar">CỬ NHÂN SƯ PHẠM KHOA HỌC TỰ NHIÊN</div>
+                <div class="ad-bar">KHUNG CHƯƠNG TRÌNH ĐÀO TẠO</div>
+                <div class="ad-bar">CHUẨN ĐẦU RA CHƯƠNG TRÌNH ĐÀO TẠO</div>
+                </div>
+                <div class="admission-page-content">
+                    <!-- admission review -->
+                    <div class="rpo rpo-p1">
+
+                        <div class="admission-review">
+                            <div class="review-title">
+                                <i class="fa-solid fa-star"></i>
+                                <div>Sư phạm Khoa học tự nhiên</div>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Mã ngành: 7140247</span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Loại hình đào tạo: Chính quy</span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Thời gian đào tạo: 4 năm</span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Tổng số tín chỉ: 136</span>
+                            </div>
+                            <div class="review-cnt">
+                                <span>(chưa kể nội dung GDTC và GDQPAN)</span>
+                            </div>
+                        </div>
+
+                        <div class="admission-review">
+                            <div class="review-title">
+                                <i class="fa-solid fa-star"></i>
+                                <div>Chương trình đào tạo</div>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Mục tiêu trọng tâm : đào tạo được cử nhân sư phạm KHTN đảm bảo yêu cầu một giáo viên dạy được trọn vẹn môn Khoa học Tự nhiên bậc THCS theo định hướng hình thành, phát triển ở học sinh phẩm chất và năng lực, đáp ứng được yêu cầu đổi mới giáo dục phổ thông.</span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Khung chương trình được thiết kế khoa học, thuận lợi cho sinh viên học cùng lúc hai chương trình</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="admission-review">
+                            <img src="Storage/ad1.jpg" alt="">
+                        </div>
+
+                        <div class="admission-review">
+                            <div class="review-title">
+                                <i class="fa-solid fa-star"></i>
+                                <div>Vị trí việc làm</div>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Dạy học môn Khoa học tự nhiên ở trường trung học cơ sở.</span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Có năng lực xây dựng và tổ chức các   chương trình, hoạt động giáo dục STEM ở trường trung học cơ sở và trung tâm giáo dục STEM</span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Có khả năng tiếp tục học tập và nghiên cứu ở trình độ Thạc sĩ, Tiến sĩ.</span>
+                            </div>
+                            <div class="review-cnt">
+                                <img src="Storage/ad3.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="admission-review">
+                            <img src="Storage/ad2.jpg" alt="" >
+                        </div>
+
+                        <div class="admission-review">
+                            <img src="Storage/ad4.jpg" alt="">
+                        </div>
+
+                        <div class="admission-review">
+                            <div class="review-title">
+                                <i class="fa-solid fa-star"></i>
+                                <div>THÔNG TIN LIÊN HỆ</div>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Dạy học môn Khoa học tự nhiên ở trường trung học cơ sở.</span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Địa chỉ: Khoa Vật lí, nhà C, Trường ĐHSP Hà Nội – 136 – Xuân Thủy – Cầu Giấy, Hà Nội</span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Website: https://phys.hnue.edu.vn/</span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Email: khoavatli@hnue.edu.vn</span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Hotline: 0965292262 </span>
+                            </div>
+                            <div class="review-cnt">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Fanpage: chuyên trang tuyển sinh khoa Vật lí: https://www.facebook.com/hnue.phys </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- admission program -->
+                    <div class="rpo hidden rpo-p2">
+                        <div class="choose-table">
+                            <p><b>Chương trình đào tạo : </b></p>
+                            <select id="program-opt">
+                                <option value="">
+                                    Khối học vấn chung
+                                </option>
+                                <option value="">
+                                    Giáo dục thể chất & Quốc phòng (Khối học vấn chung)
+                                </option>
+                                <option value="">
+                                    Khối học vấn đào tạo và rèn luyện năng lực sư phạm
+                                </option>
+                                <option value="">
+                                    Khối học vấn chuyên ngành
+                                </option>
+                                <option value="">
+                                    Khối học vấn tự chọn
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="program-table">
+                            <div class="p-opt1 ">
+                                <div class="tablerow">
+                                    <div class="tablecell">STT</div>
+                                    <div class="tablecell">Tên học phần</div>
+                                    <div class="tablecell">Mã học phần</div>
+                                    <div class="tablecell">Số tín chỉ</div>
+                                    <div class="tablecell">Môn tiên quyết</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">1</div>
+                                    <div class="tablecell">Tiếng Anh 1 – A1</div>
+                                    <div class="tablecell">ENG 103</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">Tiếng Anh 2 – A1</div>
+                                    <div class="tablecell">ENG 104</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">Tiếng Anh 1 – A2</div>
+                                    <div class="tablecell">ENG 105</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">4</div>
+                                    <div class="tablecell">Tiếng Anh 2 – A2</div>
+                                    <div class="tablecell">ENG 106</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">5</div>
+                                    <div class="tablecell">Tiếng Pháp 1</div>
+                                    <div class="tablecell">FREN 104</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">6</div>
+                                    <div class="tablecell">Tiếng Pháp 2</div>
+                                    <div class="tablecell">FREN 106</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">7</div>
+                                    <div class="tablecell">Tiếng Nga 1</div>
+                                    <div class="tablecell">RUSS 105</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">8</div>
+                                    <div class="tablecell">Tiếng Nga 2</div>
+                                    <div class="tablecell">RUSS 106</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">9</div>
+                                    <div class="tablecell">Tiếng Trung 1</div>
+                                    <div class="tablecell">CHIN 105</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">10</div>
+                                    <div class="tablecell">Tiếng Trung 2</div>
+                                    <div class="tablecell">CHIN 106</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">12</div>
+                                    <div class="tablecell">Kinh tế chính trị Mác – Lênin</div>
+                                    <div class="tablecell">POLI 104</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">13</div>
+                                    <div class="tablecell">Chủ nghĩa xã hội khoa học</div>
+                                    <div class="tablecell">POLI 106</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">14</div>
+                                    <div class="tablecell">Tư tưởng Hồ Chí Minh</div>
+                                    <div class="tablecell">POLI 202</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">15</div>
+                                    <div class="tablecell">Lịch sử Đảng Cộng sản Việt Nam</div>
+                                    <div class="tablecell">POLI 204</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">16</div>
+                                    <div class="tablecell">Tâm lý giáo dục học</div>
+                                    <div class="tablecell">PSY 101</div>
+                                    <div class="tablecell">4</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">17</div>
+                                    <div class="tablecell">Thống kê xã hội học</div>
+                                    <div class="tablecell">MATH 137</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">18</div>
+                                    <div class="tablecell">Tiếng Việt thực hành</div>
+                                    <div class="tablecell">COMM 106</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">19</div>
+                                    <div class="tablecell">Nghệ thuật đại cương</div>
+                                    <div class="tablecell">COMM 107</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">20</div>
+                                    <div class="tablecell">Tin học đại cương</div>
+                                    <div class="tablecell">COMP 103</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                            </div>
+                            <div class="p-opt1 hidden">
+                                <div class="tablerow">
+                                    <div class="tablecell">STT</div>
+                                    <div class="tablecell">Tên học phần</div>
+                                    <div class="tablecell">Mã học phần</div>
+                                    <div class="tablecell">Số tín chỉ</div>
+                                    <div class="tablecell">Môn tiên quyết</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">1</div>
+                                    <div class="tablecell">Giáo dục Thể chất 1</div>
+                                    <div class="tablecell">PHYE 150</div>
+                                    <div class="tablecell">1</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">Giáo dục Thể chất 2</div>
+                                    <div class="tablecell">PHYE 151</div>
+                                    <div class="tablecell">1</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">Giáo dục Thể chất 3</div>
+                                    <div class="tablecell">PHYE 250</div>
+                                    <div class="tablecell">1</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">4</div>
+                                    <div class="tablecell">Giáo dục Thể chất 4</div>
+                                    <div class="tablecell">PHYE 251</div>
+                                    <div class="tablecell">1</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">5</div>
+                                    <div class="tablecell">Đường lối Quốc phòng và An ninh <br> của Đảng Cộng sản Việt Nam</div>
+                                    <div class="tablecell">DEFE 105</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">6</div>
+                                    <div class="tablecell">Công tác quốc phòng và an ninh</div>
+                                    <div class="tablecell">DEFE 106</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">7</div>
+                                    <div class="tablecell">Quân sự chung</div>
+                                    <div class="tablecell">DEFE 205</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">8</div>
+                                    <div class="tablecell">Kĩ thuật chiến đấu bộ binh và chiến thuật</div>
+                                    <div class="tablecell">DEFE 206</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                            </div>
+                            <div class="p-opt1 hidden">
+                                <div class="tablerow">
+                                    <div class="tablecell">STT</div>
+                                    <div class="tablecell">Tên học phần</div>
+                                    <div class="tablecell">Mã học phần</div>
+                                    <div class="tablecell">Số tín chỉ</div>
+                                    <div class="tablecell">Môn tiên quyết</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">1</div>
+                                    <div class="tablecell">Giáo dục học</div>
+                                    <div class="tablecell">PSYC 102</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">Lí luận dạy học</div>
+                                    <div class="tablecell">COMM 201</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">PSYC 101</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">Giao tiếp sư phạm</div>
+                                    <div class="tablecell">PSYC 104</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">PSYC 102</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">4</div>
+                                    <div class="tablecell">Rèn luyện nghiệp vụ sư phạm thường xuyên</div>
+                                    <div class="tablecell">COMM 001</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">5</div>
+                                    <div class="tablecell">Đánh giá trong giáo dục</div>
+                                    <div class="tablecell">COMM 003</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">COMM 201, PSYC 102</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">6</div>
+                                    <div class="tablecell">Thực hành kĩ năng giáo dục</div>
+                                    <div class="tablecell">COMM 301</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">PSYC 102</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">7</div>
+                                    <div class="tablecell">Lí luận và Phương pháp dạy học Khoa học tự nhiên</div>
+                                    <div class="tablecell">SCIE 001</div>
+                                    <div class="tablecell">4</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">8</div>
+                                    <div class="tablecell">Xây dựng kế hoạch dạy học môn Khoa học tự nhiên</div>
+                                    <div class="tablecell">SCIE 002</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 001</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">9</div>
+                                    <div class="tablecell">Tổ chức dạy học môn Khoa học tự nhiên</div>
+                                    <div class="tablecell">SCIE 003</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 002</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">10</div>
+                                    <div class="tablecell">Phát triển chương trình nhà trường</div>
+                                    <div class="tablecell">COMM 004</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">PSYC 102</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">11</div>
+                                    <div class="tablecell">Thực hành dạy học tại trường sư phạm</div>
+                                    <div class="tablecell">SCIE 004</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 003</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">12</div>
+                                    <div class="tablecell">Thực tập sư phạm I</div>
+                                    <div class="tablecell">COMM 013</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">13</div>
+                                    <div class="tablecell">Thực tập sư phạm II</div>
+                                    <div class="tablecell">COMM 014</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">COMM 013</div>
+                                </div>
+                                
+                            </div>
+                            <div class="p-opt1 hidden">
+                                <div class="tablerow">
+                                    <div class="tablecell">STT</div>
+                                    <div class="tablecell">Tên học phần</div>
+                                    <div class="tablecell">Mã học phần</div>
+                                    <div class="tablecell">Số tín chỉ</div>
+                                    <div class="tablecell">Môn tiên quyết</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">1</div>
+                                    <div class="tablecell">Lực và chuyển động</div>
+                                    <div class="tablecell">SCIE 005</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">Âm thanh và ánh sáng</div>
+                                    <div class="tablecell">SCIE 006</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 005</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">Điện và từ</div>
+                                    <div class="tablecell">SCIE 007</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 005</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">4</div>
+                                    <div class="tablecell">Năng lượng</div>
+                                    <div class="tablecell">SCIE 008</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 005, SCIE 006</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">5</div>
+                                    <div class="tablecell">Trái đất và bầu trời</div>
+                                    <div class="tablecell">SCIE 009</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 005, SCIE 006</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">6</div>
+                                    <div class="tablecell">Thí nghiệm trong dạy học KHTN</div>
+                                    <div class="tablecell">SCIE 010</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">SCIE 001</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">7</div>
+                                    <div class="tablecell">Thực hành khoa học tự nhiên 1</div>
+                                    <div class="tablecell">SCIE 011</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">SCIE 005, SCIE 006, SCIE 007</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">8</div>
+                                    <div class="tablecell">Cơ sở hóa học chung</div>
+                                    <div class="tablecell">SCIE 012</div>
+                                    <div class="tablecell">5</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">9</div>
+                                    <div class="tablecell">Hóa học vô cơ</div>
+                                    <div class="tablecell">SCIE 013</div>
+                                    <div class="tablecell">5</div>
+                                    <div class="tablecell">SCIE 012</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">10</div>
+                                    <div class="tablecell">Hóa học hữu cơ</div>
+                                    <div class="tablecell">SCIE 014</div>
+                                    <div class="tablecell">5</div>
+                                    <div class="tablecell">SCIE 012</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">11</div>
+                                    <div class="tablecell">Thực hành khoa học tự nhiên 2</div>
+                                    <div class="tablecell">SCIE 015</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">SCIE 012</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">12</div>
+                                    <div class="tablecell">Đa dạng thế giới sống</div>
+                                    <div class="tablecell">SCIE 016</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">COMM 104</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">13</div>
+                                    <div class="tablecell">Sinh học tế bào và cơ thể</div>
+                                    <div class="tablecell">SCIE 017</div>
+                                    <div class="tablecell">4</div>
+                                    <div class="tablecell">SCIE 016</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">14</div>
+                                    <div class="tablecell">Con người và sức khỏe</div>
+                                    <div class="tablecell">SCIE 018</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 016</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">15</div>
+                                    <div class="tablecell">Sinh thái học và bảo vệ môi trường</div>
+                                    <div class="tablecell">SCIE 019</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 016</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">16</div>
+                                    <div class="tablecell">Di truyền học và tiến hóa</div>
+                                    <div class="tablecell">SCIE 020</div>
+                                    <div class="tablecell">4</div>
+                                    <div class="tablecell">SCIE 017</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">17</div>
+                                    <div class="tablecell">Thực hành khoa học tự nhiên 3</div>
+                                    <div class="tablecell">SCIE 021</div>
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">SCIE 018, SCIE 019, SCIE 020</div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="p-opt1 hidden">
+                                <div class="tablerow">
+                                    <div class="tablecell">1</div>
+                                    <div class="tablecell">Biến đổi khí hậu</div>
+                                    <div class="tablecell">SCIE 022</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 009</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">2</div>
+                                    <div class="tablecell">Năng lượng tái tạo</div>
+                                    <div class="tablecell">SCIE 023</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 008</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">Hóa học sự sống</div>
+                                    <div class="tablecell">SCIE 024</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">4</div>
+                                    <div class="tablecell">Một số phương pháp phân tích hóa sinh</div>
+                                    <div class="tablecell">SCIE 025</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">5</div>
+                                    <div class="tablecell">Dạy học chủ đề khám phá tính đa dạng của thế giới sống trong môn KHTN</div>
+                                    <div class="tablecell">SCIE 026</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 002, SCIE 016</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">6</div>
+                                    <div class="tablecell">Dạy học chủ đề các hoạt động sống của sinh vật trong môn KHTN</div>
+                                    <div class="tablecell">SCIE 027</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell">SCIE 017</div>
+                                </div>
+                                <div class="tablerow">
+                                    <div class="tablecell">7</div>
+                                    <div class="tablecell">Dạy học chủ đề khám phá cơ thể người và bảo vệ sức khỏe trong môn KHTN</div>
+                                    <div class="tablecell">SCIE 028</div>
+                                    <div class="tablecell">3</div>
+                                    <div class="tablecell"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- admission standard -->
+                    <div class="rpo hidden rpo-p3">
+                        <div class="whiteBarScroll">
+                            <div class="detail-slider">
+                                <div class="quality-title active">Tiêu chuẩn 1</div>
+                                <div class="quality-title">Tiêu chuẩn 2</div>
+                                <div class="quality-title">Tiêu chuẩn 3</div>
+                                <div class="quality-title">Tiêu chuẩn 4</div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="standard-quality">
+                            <div class="quality-content">
+                                <p><b>Tiêu chuẩn 1: Phẩm chất</b></p>
+                                <ul>
+                                    <li> Yêu thiên nhiên, quê hương, đất nước: Yêu thiên nhiên, bảo vệ môi trường, hiểu và chấp hành đường lối Đảng, bảo vệ Tổ quốc.</li>
+                                    <li> Yêu thương học sinh và có niềm tin vào học sinh: Tôn trọng khả năng học tập, yêu thương, hỗ trợ học sinh trong học tập và đời sống.</li>
+                                    <li> Yêu nghề và tự hào về nghề dạy học: Yêu nghề, nhận thức về giá trị nghề nghiệp, tận tâm với nghề.</li>
+                                    <li> Trung thực và đáng tin cậy: Trung thực, bảo vệ lẽ phải, chia sẻ và hỗ trợ bạn bè trong học tập.</li>
+                                    <li> Trách nhiệm và tận tâm: Có trách nhiệm với bản thân và xã hội, sáng tạo trong học tập, tôn trọng sự khác biệt.</li>
+                                    <li> Ý thức tự học, tự nghiên cứu suốt đời: Tự học suốt đời, tìm kiếm phương pháp học tập phù hợp.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="quality-content">
+                                <p><b>Tiêu chuẩn 2: Tinh thần trách nhiệm</b></p>
+                                <ul>
+                                    <li> Cam kết thực hiện tốt nhiệm vụ được giao: Đảm bảo hoàn thành công việc đúng hạn và hiệu quả.</li>
+                                    <li> Tôn trọng và bảo vệ nguyên tắc nghề nghiệp: Thực hiện công việc một cách trung thực, đúng đắn và bảo vệ đạo đức nghề nghiệp.</li>
+                                    <li> Chủ động, sáng tạo trong công việc: Đưa ra các giải pháp sáng tạo để giải quyết vấn đề và cải thiện hiệu suất công việc.</li>
+                                    <li> Hợp tác và làm việc nhóm hiệu quả: Góp phần vào sự thành công chung của nhóm, xây dựng môi trường làm việc hài hòa.</li>
+                                    <li> Chịu trách nhiệm với kết quả công việc: Đảm bảo kết quả công việc đạt được đúng yêu cầu và có chất lượng cao.</li>
+                                </ul>
+                            </div>
+                            <div class="quality-content">
+                                <p><b>Tiêu chuẩn 3: Đổi mới sáng tạo</b></p>
+                                <ul>
+                                    <li> Tích cực tham gia vào quá trình cải tiến và đổi mới: Luôn tìm kiếm cơ hội để cải thiện phương pháp làm việc.</li>
+                                    <li> Áp dụng công nghệ mới trong công việc: Sử dụng các công cụ và kỹ thuật mới để nâng cao hiệu quả công việc.</li>
+                                    <li> Khuyến khích sự sáng tạo và đổi mới trong nhóm: Tạo môi trường khuyến khích sự đóng góp ý tưởng và thử nghiệm các giải pháp mới.</li>
+                                    <li> Chủ động tìm hiểu và áp dụng xu hướng mới: Theo dõi các xu hướng mới trong ngành để không bị tụt hậu và áp dụng vào công việc.</li>
+                                    <li> Sẵn sàng thay đổi để thích ứng với môi trường làm việc: Linh hoạt trong việc thay đổi và cập nhật các phương thức làm việc phù hợp.</li>
+                                </ul>
+                            </div>
+                            <div class="quality-content">
+                                <p><b>Tiêu chuẩn 4: Tư duy phản biện và giải quyết vấn đề</b></p>
+                                <ul>
+                                    <li> Phân tích và đánh giá vấn đề một cách khách quan: Cẩn trọng trong việc phân tích các tình huống và vấn đề, tránh thiên lệch và dựa vào bằng chứng.</li>
+                                    <li> Tìm ra giải pháp tối ưu cho vấn đề: Luôn tìm cách giải quyết vấn đề một cách hiệu quả và tiết kiệm nguồn lực.</li>
+                                    <li> Hợp tác trong việc giải quyết vấn đề: Làm việc nhóm để cùng tìm ra giải pháp tối ưu, chia sẻ thông tin và kinh nghiệm để giải quyết vấn đề.</li>
+                                    <li> Đưa ra quyết định dựa trên phân tích và sự đánh giá: Quyết định dựa trên thông tin đầy đủ và phân tích rõ ràng, tránh đưa ra quyết định vội vàng.</li>
+                                    <li> Rút ra bài học kinh nghiệm từ các vấn đề đã giải quyết: Sau mỗi tình huống, có sự tổng kết, rút ra bài học và áp dụng cho những tình huống sau này.</li>
+                                </ul>
+                            </div>
+                                                        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="blank"></div>
+    <footer>
+        <div id="footer-img">
+            <div class="logo-contact">
+
+                <div class="nav-bar"> 
+
+                    <a href="home.html" >
+                        <img src="Storage/hnue-logo.jpg" alt="" class="logo-pic">
+                    </a>
+
+                    <div class="logo-name">
+                        <div class="logo-name-up">
+                            TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI
+                        </div>
+                        <div class="logo-name-dw">
+                            Hanoi National University of Education
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="social-contact">
+
+                    <div class="social">
+                        
+                        <div>
+                            <a href="https://www.facebook.com/dhsphnhnue">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://www.youtube.com/channel/UCrsAgUElidC5X9ZJBSNuPyA/videos">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://www.linkedin.com/company/truong-dai-hoc-su-pham-ha-noi/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="http://mail.hnue.edu.vn/">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-info">
+            <div>
+                <h3>Địa chỉ</h3>
+                <div>
+                    <p><b>Trụ sở chính</b></p>
+                    136 Xuân Thủy - Cầu Giấy - Hà Nội
+                </div>
+                <div class="map-location">
+
+                </div>
+            </div>
+
+            <div>
+                <h3>Liên hệ</h3>
+                <div>
+                    <div>
+                        <p>Điện thoại</p>
+                        <i class="fas fa-phone-alt"></i>
+                        <span> 024.37547823</span>
+                    </div>
+                    <div>
+                        <p>Fax</p>
+                        <i class="fas fa-fax"></i>
+                        <span>024.37547971</span>
+                    </div>
+                    <div>
+                        <p>Mail</p>
+                        <i class="fas fa-envelope"></i>
+                        <span>p.hcdn@hnue.edu.vn</span>
+                    </div>        
+                </div>
+            </div>
+
+            <div>
+                <h3>Liên kết</h3>
+                <div>
+                    <p><b>Cổng thông tin Đại học</b></p>
+                    <i class="fas fa-globe"></i>
+                    <a href="http://hnue.edu.vn">http://hnue.edu.vn</a>
+                </div>
+                <div>
+                    <p><b>Cổng đào tạo</b></p>
+                    <i class="fas fa-globe"></i>
+                    <a href="https://dtdh.hnue.edu.vn/">https://dtdh.hnue.edu.vn/</a>
+                </div>
+                <div>
+                    <p><b>Thư viện</b></p>
+                    <i class="fas fa-globe"></i>
+                    <a href="https://lib.hnue.edu.vn/">https://lib.hnue.edu.vn/</a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Về chúng tôi</h3>
+                <a href="home.html" ><p>Trang chủ</p></a>
+                <a href="about.html"><p>Giới thiệu</p></a>
+                <a href="news.html"><p>Tin tức</p></a>
+                <a href="admission.html"><p>Tuyển sinh</p></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="JS/script2.js">
+
+    </script>
+
+</body>
+</html>

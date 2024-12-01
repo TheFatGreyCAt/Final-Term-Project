@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="CSS/Dangky-Dangnhap.css">
+    <style>
+        .hidden{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="Quay_lai" onclick="Quay_lai()">&#8592;</button>
+    <div id="Dangnhapchinh">
+        <form>
+            <div id="Dangnhap">
+                <p>Đăng nhập</p>
+                <label>Email:</label>
+                <input type="email" id="Email-dn">
+                <label>Mật khẩu:</label>
+                <input type="password" id="Password-dn">
+                <button type="button" onclick="Dangnhaptaikhoan()">Đăng nhập</button>
+                <Button type="button" onclick="Dangky()">Đăng ký nếu bạn chưa có tài khoản</Button>
+            </div>
+        </form>
+    </div>
+    <div id="Dangkychinh" class="hidden">
+        <form>
+            <div id="Dangky">
+                <p>Đăng ký</p>
+                <label>Nhập tên của bạn:</label>
+                <input type="text" id="Ten">
+                <label>Nhập Email của bạn:</label>
+                <input type="email" id="Email-dk">
+                <label>Nhập mật khẩu của bạn:</label>
+                <input type="password" id="Password-dk1">
+                <label>Nhập lại mật khẩu của bạn:</label>
+                <input type="password" id="Password-dk2">
+                <button type="button" onclick="Dangkytaikhoan()">Đăng ký</button>
+                <button type="button" onclick="Dangnhap()">Quay trở lại Đăng nhập</button>
+            </div>
+        </form>
+    </div>
+    <script src="JS/Dangky-Dangnhap.js"></script>
+</body>
+</html>

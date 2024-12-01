@@ -1,0 +1,368 @@
+/* font Koh Santepheap */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --main-color:#3867d6;
+    --light-blue:#4b7bec;
+    --light-white:#eee;
+    --light-bg:#dcdcdc;
+    --green:#26de81;
+    --yellow:#fed330;
+    --orange:#fd9644;
+    --red:#fc5c65;
+    --grey:#d1d8e0;
+    --black:#4b6584;
+    --white:#fff;
+    --aqua:rgb(221, 245, 253);
+    --dark-blue:#143884;
+    --border:.25rem solid rgba(0, 0, 0);
+}
+
+*{
+    font-family: 'Plus Jakarta Sans';
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    word-spacing: .15rem;
+    letter-spacing: .01rem;
+}
+
+/* header */
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem .1rem 1rem;
+    position: relative;
+}
+
+.logo-name{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.logo-name-up{
+    color: var(--main-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.logo-name-dw{
+    font-size: .8rem;
+    padding-top: .4rem; padding-bottom: .8rem;
+    font-weight:lighter;
+}
+
+.logo-pic{
+    width: 4rem; height: 4rem;
+    margin-top: -25%;
+    border-radius: 2rem;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: .1rem .1rem .1rem 2%;
+    font-weight: bold;
+    .home-btn{
+        color: var(--main-color);
+    }
+}
+.flex > .nav-bar-adjust{
+    width: 100%;
+    align-items: baseline;
+    display: flex; justify-content: flex-end;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.nav-bar > a,
+.nav-bar-adjust > a{
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.nav-bar-adjust a i{
+    transform: rotate(-90deg);
+}
+
+.nav-bar + .nav-bar-adjust > a:hover{
+    color: var(--white);
+    background-color: var(--main-color);
+    /* transform: rotate(0deg); fix this */
+}
+
+a{
+    color: black;
+}
+
+.header-space{
+    height: 8rem;
+}
+
+/* user */
+#user-btn
+{
+    font-size: 1.5rem; margin-right: 1%;
+    border-radius: .4rem; 
+    cursor: pointer;
+}
+.profile{
+    width: 16%; height: 20rem;
+    display: flex; flex-direction: column;
+    align-items: center; 
+    gap: .5rem; padding: 1rem;
+    background-color: white;
+    border-radius: .8rem;
+    position: absolute;
+    top: 8rem; right: 3rem;
+    z-index: 1000;
+    display: none;
+    /* border: var(--border); */
+}
+.profile.active{
+    display: flex; 
+}
+.image{
+    margin-top: 1.5rem;
+    width: 6rem; height: 6rem;
+    border-radius: 4rem;
+    /* border: var(--border); */
+}
+.option-btn{
+    width: 100%; height: 2rem;
+    display: flex; 
+    align-items: center; justify-content: center;
+    padding: 1rem; margin-bottom: 1rem;
+    border-radius: .5rem;
+    background-color: var(--orange); color: white;
+}
+.option-btn:hover{
+    background-color: var(--yellow);
+}
+
+#user-btn > img{
+    width: 3.5rem; height: 3.5rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+
+/* search-box */
+#search-box{
+    display: flex; cursor: pointer;
+    font-size: 1.3rem;
+    left: -15rem; top: 5rem;
+    height: 3rem;
+    padding: 2rem;
+    border-radius: 2.2rem;
+    align-items: center; border: .15rem solid var(--dark-blue);
+}
+
+#search-box input.active{
+    width: 20rem;
+    z-index: 1001;
+}
+
+#search-box input{
+    width: 0; outline: none; border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+#search-box input.search-active{
+    width: 20rem; margin-left: 2%;
+}
+
+#search-box a .fas{
+    color: var(--dark-blue);
+}
+
+.nav-bar-adjust.hidden{
+    display: none;
+}
+
+/* footer */
+
+footer{
+    position: relative;
+    background-color: var(--aqua);
+    text-align: left;
+    font-size: .8rem; 
+    padding: 1rem;
+}
+
+.logo-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50%;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12rem; 
+    padding: 2rem 0 4rem 0;
+    font-size: 1rem;
+}
+.footer-info > div > h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: var(--light-blue);
+}
+.footer-info > div > div,
+.footer-info > div > a > p,
+.footer-info > div > div > div{
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+/* admission-page */
+
+#content-admission{
+    width: 100%;
+    height: 120rem;
+    background-color: var(--aqua);
+}
+
+.admission-page{
+    z-index: 999;
+    padding-top: 9rem;
+}
+
+#KHTN{
+    display: flex; flex-direction: column;
+    align-items: center;
+}
+
+/* phan biet align-items va justify-content */
+
+.admission-page-bar{
+    display: flex; flex-direction: row;
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.admission-page-bar .ad-bar{
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* change this to click */
+.ad-bar.ad-bar-active{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.admission-page-content{
+    width: 90%; 
+}
+
+.rpo{
+    background-color: var(--white);
+    width: 100%; height: 95rem;
+    border-radius: 1rem;
+    display: flex; flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rpo.hidden{
+    display: none;
+}
+
+.admission-review{
+    display: flex; flex-direction: column;
+    justify-content: center;
+    width: 30%; height: 23rem;
+    gap: 1rem; 
+    margin: 2.5% 0 0 2.5%;
+    padding: 2rem;
+    background-color: #c0e3ff;
+    /* background-color: var(--aqua); */
+    border-radius: 2rem;
+}
+
+.admission-review img{
+    border-radius: 1.5rem;
+    width: 100%; height: 100%;
+    display: flex; align-items: center;
+    border: .15rem solid var(--main-color);
+}
+
+.admission-review:nth-child(5){
+    width: 62.5%; height: 42.5%;
+}
+
+.admission-review:nth-child(4){
+    height: 42.5%;
+}
+
+.admission-review:nth-child(4) img{
+    margin-top: .5rem;
+    height: 90%;
+}
+
+.admission-review:nth-child(7){
+    width: 62.5%;
+    margin-bottom: 2.5%;   
+}
+
+.admission-review .review-title{
+    display: flex; flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem; gap: 1rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+/* .admission-review .review-title i{
+    color: var(--main-color);
+} */
+
+.admission-review .review-cnt i{
+    color: var(--main-color);
+    font-size: .6rem;
+}
+
+.blank{
+    width: 100%; height: 2rem;
+    background-color: white;
+}
+
+
+
+
+#content-admission{
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    .slider{
+        width: 34rem;
+    }
+}

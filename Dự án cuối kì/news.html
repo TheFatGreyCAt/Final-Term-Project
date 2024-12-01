@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="icon" href="Storage/tab-logo.png" type="image/png">
+</head>
+<body>
+    
+    <header>
+        <div class="flex">
+
+            <div class="nav-bar"> 
+
+                <a href="Index.html" >
+                    <img src="Storage/hnue-logo.jpg" alt="" class="logo-pic">
+                </a>
+
+                <div class="logo-name">
+                    <div class="logo-name-up">
+                        TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI
+                    </div>
+                    <div class="logo-name-dw">
+                        Hanoi National University of Education
+                    </div>
+                </div>
+
+            </div>
+            <nav class="nav-bar-adjust">
+                <a href="Index.html" class="home-btn">
+                    <span>Trang chủ</span>
+                </a>
+                <a href="news.html" class="news-btn">
+                    <span>Tin tức</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <a href="admission.html" class="admission-btn">
+                    <span>Tuyển sinh</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+            </nav>
+            <div id="search-box">
+                <input type="text" placeholder="Tìm kiếm">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div id="user-btn">
+                <img src="Storage/Unknown_person.jpg" class="image " alt="">
+                <img src="Storage/admin.png" class="image active" alt="">
+                <img src="Storage/user.png" class="image " alt="">
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="Storage/Unknown_person.jpg" class="image" alt="">
+            <h3 class="name">Unknown</h3>
+            <p class="role">Unknown</p>
+            <div class="flex-btn">
+                <a href="Dangky-Dangnhap.html" class="option-btn">Đăng nhập</a>
+                <a href="Dangky-Dangnhap.html" class="option-btn" onclick="check()">Đăng kí</a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="Storage/admin.png" class="image" alt="">
+            <h3 class="name">Unknown</h3>
+            <p class="role">Unknown</p>
+            <div class="flex-btn hidden">
+                <a href="Hosotuyensinh.html" class="option-btn">Quản lí hồ sơ</a>
+                <a href="NewsForm.html" class="option-btn">Đăng tin tuyển sinh</a>
+                <a href="Dangky-Dangnhap.html" class="option-btn" onclick="dangxuat()">Đăng xuất</a>
+            </div>
+        </div>
+        
+        <div class="profile">
+            <img src="Storage/user.png" class="image" alt="">
+            <h3 class="name">Unknown</h3>
+            <p class="role">Unknown</p>
+            <div class="flex-btn">
+                <a href="Hosotuyensinh.html" class="option-btn">Hồ sơ tuyển sinh</a>
+                <a href="Dangky-Dangnhap.html" class="option-btn" onclick="dangxuat()">Đăng xuất</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="newsbox">
+
+        <div class="news-banner">
+            <img src="Storage/info-event.png" alt="">
+        </div>
+
+        <div class="admission-news-event">
+
+            <div class="content-title">
+
+                <h1>Tin tức</h1>
+                <h3>Sự kiện & Thông tin</h3>
+
+            </div>
+
+            <div class="admission-grid">
+                <div class="event">
+                    <div>
+                        <img src="Storage/CT1.png" alt="Chính sách hỗ trợ học phí">
+                    </div>
+                    <div class="event-content">
+                        <i class="fa-regular fa-calendar"><b>12/11/2024</b></i>
+                        <h2>CHÍNH SÁCH HỖ TRỢ HỌC PHÍ</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div>
+                        <img src="Storage/CT2.png" alt="Chương trình học bổng">
+                    </div>
+                    <div class="event-content">
+                        <i class="fa-regular fa-calendar"><b>12/11/2024</b></i>
+                        <h2>CHƯƠNG TRÌNH HỌC BỔNG</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div>
+                        <img src="Storage/CT3.png" alt="Chương trình song bằng">
+                    </div>
+                    <div class="event-content">
+                        <i class="fa-regular fa-calendar"><b>12/11/2024</b></i>
+                        <h2>CHƯƠNG TRÌNH SONG BẰNG</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                </div>
+                
+                <div class="event">
+                    <div>
+                        <img src="Storage/CT1.png" alt="Chính sách hỗ trợ học phí">
+                    </div>
+                    <div class="event-content">
+                        <i class="fa-regular fa-calendar"><b>12/11/2024</b></i>
+                        <h2>CHÍNH SÁCH HỖ TRỢ HỌC PHÍ</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div>
+                        <img src="Storage/CT2.png" alt="Chương trình học bổng">
+                    </div>
+                    <div class="event-content">
+                        <i class="fa-regular fa-calendar"><b>12/11/2024</b></i>
+                        <h2>CHƯƠNG TRÌNH HỌC BỔNG</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div>
+                        <img src="Storage/CT3.png" alt="Chương trình song bằng">
+                    </div>
+                    <div class="event-content">
+                        <i class="fa-regular fa-calendar"><b>12/11/2024</b></i>
+                        <h2>CHƯƠNG TRÌNH SONG BẰNG</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-number"></div>
+
+        </div>            
+
+    </div>
+    
+    <footer>
+        <div id="footer-img">
+            <div class="logo-contact">
+
+                <div class="nav-bar"> 
+
+                    <a href="home.html" >
+                        <img src="Storage/hnue-logo.jpg" alt="" class="logo-pic">
+                    </a>
+
+                    <div class="logo-name">
+                        <div class="logo-name-up">
+                            TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI
+                        </div>
+                        <div class="logo-name-dw">
+                            Hanoi National University of Education
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="social-contact">
+
+                    <div class="social">
+                        
+                        <div>
+                            <a href="https://www.facebook.com/dhsphnhnue">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://www.youtube.com/channel/UCrsAgUElidC5X9ZJBSNuPyA/videos">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://www.linkedin.com/company/truong-dai-hoc-su-pham-ha-noi/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="http://mail.hnue.edu.vn/">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-info">
+            <div>
+                <h3>Địa chỉ</h3>
+                <div>
+                    <p><b>Trụ sở chính</b></p>
+                    136 Xuân Thủy - Cầu Giấy - Hà Nội
+                </div>
+                <div class="map-location">
+
+                </div>
+            </div>
+
+            <div>
+                <h3>Liên hệ</h3>
+                <div>
+                    <div>
+                        <p>Điện thoại</p>
+                        <i class="fas fa-phone-alt"></i>
+                        <span> 024.37547823</span>
+                    </div>
+                    <div>
+                        <p>Fax</p>
+                        <i class="fas fa-fax"></i>
+                        <span>024.37547971</span>
+                    </div>
+                    <div>
+                        <p>Mail</p>
+                        <i class="fas fa-envelope"></i>
+                        <span>p.hcdn@hnue.edu.vn</span>
+                    </div>        
+                </div>
+            </div>
+
+            <div>
+                <h3>Liên kết</h3>
+                <div>
+                    <p><b>Cổng thông tin Đại học</b></p>
+                    <i class="fas fa-globe"></i>
+                    <a href="http://hnue.edu.vn">http://hnue.edu.vn</a>
+                </div>
+                <div>
+                    <p><b>Cổng đào tạo</b></p>
+                    <i class="fas fa-globe"></i>
+                    <a href="https://dtdh.hnue.edu.vn/">https://dtdh.hnue.edu.vn/</a>
+                </div>
+                <div>
+                    <p><b>Thư viện</b></p>
+                    <i class="fas fa-globe"></i>
+                    <a href="https://lib.hnue.edu.vn/">https://lib.hnue.edu.vn/</a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Về chúng tôi</h3>
+                <a href="home.html" ><p>Trang chủ</p></a>
+                <a href="about.html"><p>Giới thiệu</p></a>
+                <a href="news.html"><p>Tin tức</p></a>
+                <a href="admission.html"><p>Tuyển sinh</p></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="JS/script3.js">
+
+    </script>
+
+</body>
+</html>

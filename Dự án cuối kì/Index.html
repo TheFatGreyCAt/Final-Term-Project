@@ -1,0 +1,1295 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="icon" href="Storage/tab-logo.png" type="image/png">
+</head>
+<body>
+    
+    <header>
+        <div class="flex">
+
+            <div class="nav-bar"> 
+
+                <a href="Index.html" >
+                    <img src="Storage/hnue-logo.jpg" alt="" class="logo-pic">
+                </a>
+
+                <div class="logo-name">
+                    <div class="logo-name-up">
+                        TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI
+                    </div>
+                    <div class="logo-name-dw">
+                        Hanoi National University of Education
+                    </div>
+                </div>
+
+            </div>
+            <nav class="nav-bar-adjust">
+                <a href="Index.html" class="home-btn">
+                    <span>Trang chủ</span>
+                </a>
+                <a href="news.html" class="news-btn">
+                    <span>Tin tức</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <a href="admission.html" class="admission-btn">
+                    <span>Tuyển sinh</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+            </nav>
+            <div id="search-box">
+                <input type="text" placeholder="Tìm kiếm">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div id="user-btn">
+                <img src="Storage/Unknown_person.jpg" class="image " alt="">
+                <img src="Storage/admin.png" class="image active" alt="">
+                <img src="Storage/user.png" class="image " alt="">
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="Storage/Unknown_person.jpg" class="image" alt="">
+            <h3 class="name">Unknown</h3>
+            <p class="role">Unknown</p>
+            <div class="flex-btn">
+                <a href="Dangky-Dangnhap.html" class="option-btn">Đăng nhập</a>
+                <a href="Dangky-Dangnhap.html" class="option-btn" onclick="check()">Đăng kí</a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="Storage/admin.png" class="image" alt="">
+            <h3 class="name">Unknown</h3>
+            <p class="role">Unknown</p>
+            <div class="flex-btn hidden">
+                <a href="Hosotuyensinh.html" class="option-btn">Quản lí hồ sơ</a>
+                <a href="NewsForm.html" class="option-btn">Đăng tin tuyển sinh</a>
+                <a href="Dangky-Dangnhap.html" class="option-btn" onclick="dangxuat()">Đăng xuất</a>
+            </div>
+        </div>
+        
+        <div class="profile">
+            <img src="Storage/user.png" class="image" alt="">
+            <h3 class="name">Unknown</h3>
+            <p class="role">Unknown</p>
+            <div class="flex-btn">
+                <a href="Hosotuyensinh.html" class="option-btn">Hồ sơ tuyển sinh</a>
+                <a href="Dangky-Dangnhap.html" class="option-btn" onclick="dangxuat()">Đăng xuất</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="content">
+
+        <div class="bg-banner">
+            <div class="title">
+                <div class="subtile1">TUYỂN SINH TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI</div>
+                <div class="subtile2"><b>Đăng kí xét tuyển trực tuyến</b></div>
+                <div class="subtile3">Nộp hồ sơ trực tuyến để không bỏ lỡ cơ hội trở thành sinh viên Sư phạm</div>
+                <div class="title-submit">
+                    <a href="#">Nộp hồ sơ trực tuyến &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="Storage/bannerVer2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="admission-news">
+            <div class="content-title">
+
+                <h1>TUYỂN SINH</h1>
+                <h3>Thông báo</h3>
+
+            </div>
+
+            <div class="news-content">
+                <div class="news-slideshow">
+                    <div class="slide-box">
+
+                        <div class="news-box">
+                            <div>
+                                <img src="Storage/thongbao.png" alt="" class="news-img">
+                            </div>
+                            <div class="news">
+                                <i class="fa-regular fa-calendar"><b>17/08/2024</b></i>
+                                <h2><a href="">THÔNG BÁO ĐIỂM CHUẨN XÉT TUYỂN DỰA TRÊN ĐIỂM THI TỐT NGHIỆP THPT NĂM 2024</a></h2>
+                            </div>
+                        </div>
+
+                        <div class="news-box">
+                            <div>
+                                <img src="Storage/thongbao.png" alt="" class="news-img">
+                            </div>
+                            <div class="news">
+                                <i class="fa-regular fa-calendar"><b>20/08/2024</b></i>
+                                <h2><a href="">THÔNG BÁO NHẬP HỌC ĐỐI VỚI SINH VIÊN MỚI KHÓA 74</a></h2>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <div>
+                                <img src="Storage/thongbao.png" alt="" class="news-img">
+                            </div>
+                            <div class="news">
+                                <i class="fa-regular fa-calendar"><b>19/07/2024</b></i>
+                                <h2><a href="">THÔNG BÁO ĐIỂM SÀN TUYỂN SINH ĐẠI HỌC THEO PT1 NĂM 2024</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide-box">
+                        <div class="news-box">
+                            <div>
+                                <img src="Storage/thongbao.png" alt="" class="news-img">
+                            </div>
+                            <div class="news">
+                                <i class="fa-regular fa-calendar"><b>19/08/2024</b></i>
+                                <h2><a href="">HƯỚNG DẪN XÁC NHẬN NHẬP HỌC TRÊN HỆ THỐNG CỦA BỘ GDĐT</a></h2>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <div>
+                                <img src="Storage/thongbao.png" alt="" class="news-img">
+                            </div>
+                            <div class="news">
+                                <i class="fa-regular fa-calendar"><b>20/07/2024</b></i>
+                                <h2><a href="">LƯU Ý ĐỐI VỚI THÍ SINH ĐỦ ĐIỀU KIỆN TRÚNG TUYỂN THEO PHƯƠNG THỨC 2, 3</a></h2>
+                            </div>
+                        </div>
+                        <div class="news-box">
+
+                            <div>
+                                <img src="Storage/thongbao.png" alt="" class="news-img">
+                            </div>
+
+                            <div class="news">
+                                <i class="fa-regular fa-calendar"><b>14/07/2024</b></i>
+                                <h2><a href="">LƯU Ý ĐỐI VỚI THÍ SINH ĐỦ ĐIỀU KIỆN TRÚNG TUYỂN THEO PHƯƠNG THỨC 4</a></h2>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="news-modal" class="modal">
+                        <div class="modal-content">
+                            <button type="button" class="close">&times;</button>
+                            <div id="modal-body"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+
+            <div class="news-btns-slide">
+                <button id="news-prev-slide" class="fa-solid fa-angle-left"></button>
+                <button id="news-next-slide" class="fa-solid fa-angle-right"></button>
+            </div>
+            
+        </div>
+
+        <div class="admission-slide-show">
+
+            <div class="content-title">
+
+                <h1>TUYỂN SINH</h1>
+                <h3>Các ngành tuyển sinh</h3>
+                
+            </div>
+
+            <div class="slider">
+
+                <div class="stg-box">
+                    <div class="slide-show">
+                        <div class="admission">
+                            <div class="fas fa-language"></div>
+                            <h3>
+                                <b>Sư phạm Tiếng Pháp</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140233
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="fas fa-cogs"></div>
+                            <h3>
+                                <b>Sư phạm Công nghệ</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140246
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="fas fa-atom"></div>
+                            <h3>
+                                <b><a href="admission.html">Sư phạm Khoa học tự nhiên</a></b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140247
+                            </h1>
+                            <div class="link-page">
+                                <a href="">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="fas fa-map-marked-alt"></div>
+                            <h3>
+                                <b>Sư phạm Lịch sử - Địa lí</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140249
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="fas fa-chalkboard-teacher"></div>
+                            <h3>
+                                <b>Quản lí giáo dục</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140114
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="fas fa-book-open"></div>
+                            <h3>
+                                <b>Ngôn ngữ Anh</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7220201
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-show">
+
+                        <div class="admission">
+                            <div class="fa-solid fa-person-breastfeeding "></div>
+                            <h3>
+                                <b>Giáo dục Mầm non - SP Tiếng Anh</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140201
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="fa-solid fa-person-breastfeeding "></div>
+                            <h3>
+                                <b>Giáo dục Mầm non</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140201
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="fa-solid fa-children "></div>
+                            <h3>
+                                <b>Giáo dục Tiểu học - SP Tiếng Anh</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140202
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="fa-solid fa-children "></div>
+                            <h3>
+                                <b>Giáo dục Tiểu học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140202
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="fa-solid fa-puzzle-piece "></div>
+                            <h3>
+                                <b>Giáo dục đặc biệt</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140203
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="fa-solid fa-person "></div>
+                            <h3>
+                                <b>Giáo dục công dân</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140204
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-show">
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-balance-scale"></i>
+                            </div>
+                            <h3>
+                                <b>Giáo dục chính trị</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140205
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-dumbbell"></i> 
+                            </div>
+                            <h3>
+                                <b>Giáo dục thể chất</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140206
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-shield"></i> 
+                            </div>
+                            <h3>
+                                <b>Giáo dục Quốc phòng và An ninh</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140208
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-square-root-variable"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Toán học</b>
+                            </h3>
+                            <p>
+                                <b>(dạy Toán bằng tiếng Anh)</b>
+                            </p>
+                            <h1>
+                                Mã ngành : 7140209
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-square-root-variable"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Toán học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140209
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-laptop-code"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Tin học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140210
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide-show">
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-flask-vial"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Vật lí</b>
+                            </h3>
+                            <h3>
+                                <b>(dạy Vật lí bằng tiếng Anh)</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140211
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <h3>
+                                <b>Sư phạm Vật lí</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140211
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-flask"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Hoá học</b>
+                            </h3>
+                            <h3>
+                                <b>(dạy Hoá học bằng tiếng Anh)</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140212
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+                            <h3>
+                                <b>Sư phạm Hoá học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140212
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-seedling"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Sinh học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140213
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <h3>
+                                <b>Sư phạm Ngữ văn</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140217
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div class="slide-show">
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-landmark"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Lịch sử</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140218
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-globe"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Địa lí</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140219
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-music"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Âm nhạc</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140221
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-palette"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Mỹ thuật</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140222
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-language"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Tiếng Anh</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140231
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-language"></i> 
+                            </div>
+                            <h3>
+                                <b>Sư phạm Tiếng Pháp</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7140233
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                                       
+                    <div class="slide-show">
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-language"></i> 
+                            </div>
+                            <h3>
+                                <b>Ngôn ngữ Trung Quốc</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7220204
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <h3>
+                                <b>Triết học (Mác Lê-nin)</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7229001
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-feather-alt"></i> 
+                            </div>
+                            <h3>
+                                <b>Văn học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7229030
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-balance-scale"></i> 
+                            </div>
+                            <h3>
+                                <b>Chính trị học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7310201
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-brain"></i> 
+                            </div>
+                            <h3>
+                                <b>Tâm lý học</b>
+                            </h3>
+                            <h1>(Tâm lý học trường học)</h1>
+                            <h1>
+                                Mã ngành : 7310401
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-chalkboard-teacher"></i>
+                            </div>
+                            <h3>
+                                <b>Tâm lý học giáo dục</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7310403
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide-show">
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-globe"></i> 
+                            </div>
+                            <h3>
+                                <b>Việt Nam học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7310630
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-dna"></i> 
+                            </div>
+                            <h3>
+                                <b>Sinh học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7420101
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-flask"></i> 
+                            </div>
+                            <h3>
+                                <b>Hóa học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7440112
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-square-root-variable"></i> 
+                            </div>
+                            <h3>
+                                <b>Toán học</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7460101
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-laptop-code"></i> 
+                            </div>
+                            <h3>
+                                <b>Công nghệ thông tin</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7480201
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-hands-helping"></i> 
+                            </div>
+                            <h3>
+                                <b>Công tác xã hội</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7760101
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                                       
+                    <div class="slide-show">
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-accessible-icon"></i>
+                            </div>
+                            <h3>
+                                <b>Hỗ trợ giáo dục người khuyết tật</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7760103
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="admission">
+                            <div class="">
+                                <i class="fa-solid fa-suitcase-rolling"></i> 
+                            </div>
+                            <h3>
+                                <b>Quản trị dịch vụ du lịch và lữ hành</b>
+                            </h3>
+                            <h1>
+                                Mã ngành : 7810103
+                            </h1>
+                            <div class="link-page">
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="buttons-slide">
+                <button id="prev-slide" class="fa-solid fa-angle-left"></button>
+                <button id="next-slide" class="fa-solid fa-angle-right"></button>
+            </div>
+            
+            <ul class="dots">
+                <li class="dot-active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+
+        </div>
+
+        <div class="admission-content">
+            <div class="content-title">
+
+                <h1>THÔNG TIN</h1>
+                <h3>Thông tin tuyển sinh 2025</h3>
+
+            </div>
+            <div class="info25">
+
+                <div class="info25-box">
+                    <div>
+                        <img src="Storage/CT1.png" alt="" class="info25-img">
+                    </div>
+                    <div class="info25-content">
+                        <i class="fa-regular fa-calendar"><b>12/11/2024</b></i>
+                        <h2>CHÍNH SÁCH HỖ TRỢ HỌC PHÍ</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="info25-box">
+                    <div>
+                        <img src="Storage/CT2.png" alt="" class="info25-img">
+                    </div>
+                    <div class="info25-content">
+                        <i class="fa-regular fa-calendar"><b>12/11/2024</b></i>
+                        <h2>CHƯƠNG TRÌNH HỌC BỔNG</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="info25-box">
+                    <div>
+                        <img src="Storage/CT3.png" alt="" class="info25-img">
+                    </div>
+                    <div class="info25-content">
+                        <i class="fa-regular fa-calendar"><b>12/11/2024</b></i>
+                        <h2>CHƯƠNG TRÌNH SONG BẰNG</h2>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+
+                </div>     
+            </div>
+
+        </div>
+
+        <div class="medthod">
+            <div class="content-title">
+
+                <h1>HỆ ĐẠI HỌC CHÍNH QUY</h1>
+                <h3>Phương thức xét tuyển</h3>
+
+            </div>
+
+            <div class="admission-method">
+                <div class="method-menu">
+                    <div class="method-title"><i class="fa-sharp fa-solid fa-feather"></i><b>&nbsp; Phương thức 1</b></div>
+                    <div class="method-title"><i class="fa-sharp fa-solid fa-feather"></i><b>&nbsp; Phương thức 2</b></div>
+                    <div class="method-title"><i class="fa-sharp fa-solid fa-feather"></i><b>&nbsp; Phương thức 3</b></div>
+                    <div class="method-title"><i class="fa-sharp fa-solid fa-feather"></i><b>&nbsp; Phương thức 4</b></div>
+                    <div class="method-title"><i class="fa-sharp fa-solid fa-feather"></i><b>&nbsp; Phương thức 5</b></div>
+                </div>
+
+                <div class="method-content">
+                    <div>
+                        <img src="Storage/pic-step.png" alt="" class="method-img">
+                    </div>
+                    <div class="method-review method-active">
+                        <h2><b>Phương thức 1 - Sử dụng kết quả thi tốt nghiệp THPT 2025</b></h2>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Thí sinh đăng ký nguyện vọng trực tuyến trên Hệ thống hỗ trợ tuyển sinh chung của Bộ GDĐT. Có thể đăng ký xét tuyển vào nhiều ngành, không giới hạn số nguyện vọng và đóng lệ phí theo quy định.
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Xét tuyển theo từng ngành, từ cao xuống thấp dựa vào tổng điểm 3 môn thi, bao gồm môn thi chính nhân hệ số 2 (nếu có) và điểm ưu tiên (nếu có), cho đến khi đủ chỉ tiêu.
+                            </span>
+                        </div>
+                        <div><i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Các ngành như Giáo dục mầm non, Giáo dục mầm non - Sư phạm Tiếng Anh, Giáo dục thể chất, Sư phạm Âm nhạc, Sư phạm Mỹ thuật yêu cầu thí sinh tham gia Kỳ thi năng khiếu do Trường ĐHSP Hà Nội tổ chức và kết hợp kết quả thi năng khiếu với kết quả thi tốt nghiệp THPT để xét tuyển
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="method-review">
+                        <h2><b>Phương thức 2 - Diện XTT2</b></h2>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Trường ĐHSP Hà Nội ưu tiên xét tuyển thẳng các thí sinh là học sinh tham gia các đội tuyển học sinh giỏi (HSG);  
+                                   
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                học sinh các trường THPT chuyên hoặc trường THPT trực thuộc trường ĐHSP Hà Nội, trường ĐHSP thành phố Hồ Chí Minh;
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                học sinh có các chứng chỉ ngoại ngữ, tin học quốc tế. 
+                            </span>
+                        </div>
+
+                    </div>
+                    
+                    <div class="method-review">
+                        <h2><b>Phương thức 3 - Diện XTT3</b></h2>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Trường ĐHSP Hà Nội xét tuyển dựa trên kết quả học tập cấp THPT (còn gọi là xét học bạ THPT) đối với một số ngành đào tạo; đối tượng
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Đối với các ngành đào tạo giáo viên
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Đối với ngành SP Tiếng Pháp, nếu thí sinh là học sinh hệ song ngữ tiếng Pháp
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Đối với ngành SP Công nghệ
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Đối với các ngành ngoài sư phạm
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="method-review">
+                        <h2><b>Phương thức 4 - Kết quả Xét tuyển Dựa trên Điểm Thi Năng Khiếu</b></h2>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Xét tuyển sử dụng điểm thi năng khiếu kết hợp với điều kiện học bạ vào các ngành
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                GD Thể chất - Điều kiện học bạ, xét tuyển tổ hợp Bật xa (x2) và Chạy 100m
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                SP Âm nhạc - Điều kiện học bạ, xét tuyển tổ hợp Hát (x2) và Thẩm âm, Tiết tấu
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                SP Mỹ thuật - Điều kiện học bạ, xét tuyển tổ hợp Hình họa chì (x2) và Trang trí
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="method-review">
+                        <h2><b>Phương Thức 5 - Sử Dụng Điểm Thi ĐGNL Chuyên Biệt</b></h2>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Đối tượng đăng ký : Các thí sinh không dự thi ĐGNL do Trường ĐHSP Hà Nội tổ chức, nhưng đã tham gia thi ĐGNL chuyên biệt năm 2024 do Trường ĐHSP TP. Hồ Chí Minh tổ chức
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Đối với các ngành Giáo dục Mầm non và Giáo dục Mầm non - Sư phạm Tiếng Anh, thí sinh phải tham dự thêm Kỳ thi năng khiếu do Trường ĐHSP Hà Nội tổ chức để lấy kết quả thi môn năng khiếu GDMN, kết hợp với kết quả thi ĐGNL chuyên biệt và điều kiện học tập cấp THPT
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>
+                                Trường ĐHSP Hà Nội sẽ xét tuyển theo Phương thức 5 đối với tất cả thí sinh đã hoàn thành đăng ký xét tuyển, không phân biệt thí sinh sử dụng kết quả thi ĐGNL chuyên biệt do Trường ĐHSP TP. Hồ Chí Minh tổ chức hay kết quả thi ĐGNL do Trường ĐHSP Hà Nội tổ chức.
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="admission-step">
+            <div class="content-title">
+
+                <h1>THÔNG TIN</h1>
+                <h3>Quy trình nộp hồ sơ trực tuyến</h3>
+
+            </div>
+
+            <div class="step-box">
+                <div class="step-content">
+                    <div><b>Bước 1 : Đăng kí tài khoản</b></div>
+                    <div>
+                        <p>
+                            Thí sinh truy cập vào cổng thông tin xét tuyển thông qua địa chỉ 
+                        </p>
+                    </div>
+                </div>
+                <div class="step-content">
+                    <div><b>Bước 2 : Khai báo thông tin</b></div>
+                    <div>
+                        <p>
+                            Thí sinh thực hiện khai báo hồ sơ xét tuyển theo Đề án tuyển sinh của Trường ĐHSP HN với phương thức xét tuyển thẳng và xét tuyển tài năng. 
+                        </p>
+                    </div>
+                </div>
+                <div class="step-content">
+                    <div><b>Bước 3 : Đăng kí nguyện vọng</b></div>
+                    <div>
+                        <p>
+                            Thí sinh thực hiện đăng ký nguyện vọng xét tuyển trên hệ thống. 
+                        </p>
+                    </div>
+                </div>
+                <div class="step-content">
+                    <div><b>Bước 4 : Thanh toán trực tuyến</b></div>
+                    <div>
+                        <p>
+                            Thí sinh thực hiện thanh toán Lệ phí xét tuyển. Thí sinh có thể sử dụng phương thức thanh toán qua Mã định danh hoặc Mã QR.
+                        </p>
+                    </div>
+                </div>
+                <div class="step-content">
+                    <div><b>Bước 5 : Nhận thông tin kết quả</b></div>
+                    <div>
+                        <p>
+                            Thí sinh nhận thông tin kết quả trúng tuyển của trường qua địa chỉ email đã đăng ký hoặc trên trang thông tin tuyển sinh.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="admission-time">
+            <div class="content-title">
+
+                <h1>TUYỂN SINH</h1>
+                <h3>Cột mốc tuyển sinh</h3>
+
+            </div>
+
+            <div class="ad-time-content">
+                <div class="time-box">
+                    <div><i class="fa-solid fa-calendar-check"></i></div>
+                    <div><b>dd/mm/yyyy</b></div>
+                    <div>
+                        <p>
+                            ĐĂNG KÝ, ĐIỀU CHỈNH NGUYỆN VỌNG XÉT TUYỂN
+                        </p>
+                    </div>
+                </div>
+
+                <div class="time-box">
+                    <div><i class="fa-solid fa-calendar-check"></i></div>
+                    <div><b>dd/mm/yyyy</b></div>
+                    <div>
+                        <p>
+                            NỘP LỆ PHÍ XÉT TUYỂN TRỰC TUYẾN
+                        </p>
+                    </div>
+                </div>
+
+                <div class="time-box">
+                    <div><i class="fa-solid fa-calendar-check"></i></div>
+                    <div><b>dd/mm/yyyy</b></div>
+                    <div>
+                        <p>
+                            THÔNG BÁO TRÚNG TUYỂN TRÊN HỆ THỐNG
+                        </p>
+                    </div>
+                </div>
+
+                <div class="time-box">
+                    <div><i class="fa-solid fa-calendar-check"></i></div>
+                    <div><b>dd/mm/yyyy</b></div>
+                    <div>
+                        <p>
+                            HOÀN THÀNH XÁC NHẬN NHẬP HỌC TRỰC TUYẾN
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <footer>
+        <div id="footer-img">
+            <div class="logo-contact">
+
+                <div class="nav-bar"> 
+
+                    <a href="Index.html" >
+                        <img src="Storage/hnue-logo.jpg" alt="" class="logo-pic">
+                    </a>
+
+                    <div class="logo-name">
+                        <div class="logo-name-up">
+                            TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI
+                        </div>
+                        <div class="logo-name-dw">
+                            Hanoi National University of Education
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="social-contact">
+
+                    <div class="social">
+                        
+                        <div>
+                            <a href="https://www.facebook.com/dhsphnhnue">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://www.youtube.com/channel/UCrsAgUElidC5X9ZJBSNuPyA/videos">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://www.linkedin.com/company/truong-dai-hoc-su-pham-ha-noi/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="http://mail.hnue.edu.vn/">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-info">
+            <div>
+                <h3>Địa chỉ</h3>
+                <div>
+                    <p><b>Trụ sở chính</b></p>
+                    136 Xuân Thủy - Cầu Giấy - Hà Nội
+                </div>
+                <div class="map-location">
+
+                </div>
+            </div>
+
+            <div>
+                <h3>Liên hệ</h3>
+                <div>
+                    <div>
+                        <p>Điện thoại</p>
+                        <i class="fas fa-phone-alt"></i>
+                        <span> 024.37547823</span>
+                    </div>
+                    <div>
+                        <p>Fax</p>
+                        <i class="fas fa-fax"></i>
+                        <span>024.37547971</span>
+                    </div>
+                    <div>
+                        <p>Mail</p>
+                        <i class="fas fa-envelope"></i>
+                        <span>p.hcdn@hnue.edu.vn</span>
+                    </div>        
+                </div>
+            </div>
+
+            <div>
+                <h3>Liên kết</h3>
+                <div>
+                    <p><b>Cổng thông tin Đại học</b></p>
+                    <i class="fas fa-globe"></i>
+                    <a href="http://hnue.edu.vn">http://hnue.edu.vn</a>
+                </div>
+                <div>
+                    <p><b>Cổng đào tạo</b></p>
+                    <i class="fas fa-globe"></i>
+                    <a href="https://dtdh.hnue.edu.vn/">https://dtdh.hnue.edu.vn/</a>
+                </div>
+                <div>
+                    <p><b>Thư viện</b></p>
+                    <i class="fas fa-globe"></i>
+                    <a href="https://lib.hnue.edu.vn/">https://lib.hnue.edu.vn/</a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Về chúng tôi</h3>
+                <a href="Index.html" ><p>Trang chủ</p></a>
+                <a href="about.html"><p>Giới thiệu</p></a>
+                <a href="news.html"><p>Tin tức</p></a>
+                <a href="admission.html"><p>Tuyển sinh</p></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="JS/script.js">
+
+    </script>
+
+</body>
+</html>
